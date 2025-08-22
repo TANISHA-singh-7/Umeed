@@ -56,7 +56,7 @@ const Navbar = ({ sidebarOpen, setSidebarOpen }) => {
               </div>
               <div className="hidden lg:block">
                 <h1 className="text-xl font-display font-bold bg-gradient-to-r from-primary-600 to-purple-600 bg-clip-text text-transparent">
-                  MindfulSpace
+                  Umeed
                 </h1>
               </div>
             </div>

@@ -101,7 +101,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
             </div>
             <div className="text-center">
               <h2 className="text-2xl font-display font-bold bg-gradient-to-r from-primary-600 to-purple-600 bg-clip-text text-transparent">
-                MindfulSpace
+                Umeed
               </h2>
               <p className="text-sm text-calm-500 mt-1">Your wellness companion</p>
             </div>
