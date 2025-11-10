@@ -12,6 +12,10 @@
   ],
   "routes": [
     {
+      "src": "/(manifest\\.json|favicon\\.ico|logo192\\.png|logo512\\.png|robots\\.txt)",
+      "dest": "/$1"
+    },
+    {
       "src": "/static/(.*)",
       "headers": {
         "cache-control": "s-maxage=31536000,immutable"
