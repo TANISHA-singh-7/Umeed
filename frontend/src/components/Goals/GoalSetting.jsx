@@ -45,9 +45,17 @@ const GoalSetting = ({ setShowProgressLog, setShowCheckIn, setSelectedGoal }) =>
     custom: 'Custom'
   };
 
+  // useEffect(() => {
+  //   fetchGoals().then(() => setLoading(false));
+  // }, []);
   useEffect(() => {
-    fetchGoals().then(() => setLoading(false));
-  }, []);
+  const loadGoals = async () => {
+    await fetchGoals();
+    setLoading(false);
+  };
+  loadGoals();
+}, [fetchGoals]);
+
 
   const addGoal = async () => {
     if (!newGoal.title || !newGoal.target) {
